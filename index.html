@@ -1,40 +1,59 @@
-audio {
-    filter: sepia(25%) saturate(85%) grayscale(0) contrast(99%) invert(20%);
-    width: 400px;
-    height: 25px;
-}
-
-h1{
-    font-family: Garamond, serif;
-    font-size: xx-large;
-    text-align: left;
-    padding: 1%;
-}
-h2{
-    font-family: Garamond, serif;
-    font-size: x-large;
-    text-align: left;
-}
-
-tr{
-    font-family: Garamond, serif;
-}
-
-p{
-    font-family: Garamond, serif;
-}
-
-.flexy{
-    display: flex; 
-    flex-grow: 1; 
-    flex-direction:row; 
-    align-items: right;
-}
-
-.align-left{
-    text-align: left;
-}
-
-.align-right{
-    text-align: right;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <link rel="stylesheet" href="main.css">
+   <h1> I Miss My Bookstore </h1>
+   <h2> Welcome Book Lover, You Are Among Friends.</h2>
+</head>
+<body style="background:rgb(234, 212, 185);">
+   <tb style="text-align: left;">
+      <div class="align-left"> 
+         Audiobooks
+      </div>
+      <div> 
+         <tr> The Odyssey part 1: <audio
+            controls
+            src="odyssey_butler_librivox/odyssey_01_homer_butler_64kb.mp3">
+                Your browser does not support the
+                <code>audio</code> element.
+            </audio> </tr>
+      </div>
+      <div> 
+         <tr> The Odyssey part 2: <audio
+            controls
+            src="odyssey_butler_librivox/odyssey_02_homer_butler_64kb.mp3">
+                Your browser does not support the
+                <code>audio</code> element.
+            </audio> </tr>
+      </div>
+      <div> 
+         <tr> The Odyssey part 3: <audio
+            controls
+            src="odyssey_butler_librivox/odyssey_03_homer_butler_64kb.mp3">
+                Your browser does not support the
+                <code>audio</code> element.
+            </audio> </tr>
+      </div>
+      <div> 
+         <tr> The Odyssey part 4: <audio
+            controls
+            src="odyssey_butler_librivox/odyssey_04_homer_butler_64kb.mp3">
+                Your browser does not support the
+                <code>audio</code> element.
+            </audio> </tr>
+      </div>
+   </tb>
+<pre>
+   <div class="flexy">
+      <img src="bookstore.png"/>
+      <iframe style="border-radius:12px" 
+      src="https://open.spotify.com/embed/playlist/3Bdaiodut2l2yY4jAGa76X?utm_source=generator" 
+      width="25%" height="380"
+      frameBorder="0"
+      allowfullscreen=""
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+      loading="lazy"></iframe>
+   </div>
+</pre>
+</body>
+</html>
